@@ -1,2 +1,4 @@
 resources:
   - ../../base
+
+namespace: kafka-dev
