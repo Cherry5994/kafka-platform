@@ -1,0 +1,4 @@
+resources:
+  - kafka-connect.yaml
+  - orders-file-sink.yaml
+  - postgres.yaml

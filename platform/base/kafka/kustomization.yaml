@@ -1,0 +1,4 @@
+resources:
+  - kafka-cluster.yaml
+  - kafka-nodepool.yaml
+  - orders-topic.yaml
