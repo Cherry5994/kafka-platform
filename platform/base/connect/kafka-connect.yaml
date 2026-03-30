@@ -10,23 +10,7 @@ spec:
   version: 4.1.0
   replicas: 1
   bootstrapServers: my-cluster-kafka-bootstrap:9092
-
-  groupId: connect-cluster
-  configStorageTopic: connect-configs
-  offsetStorageTopic: connect-offsets
-  statusStorageTopic: connect-status
-
   config:
     config.storage.replication.factor: 1
     offset.storage.replication.factor: 1
     status.storage.replication.factor: 1
-
-  build:
-    output:
-      type: docker
-      image: registry.dock-registry.svc.cluster.local:5000/connect-jdbc:latest
-    plugins:
-      - name: jdbc-connector
-        artifacts:
-          - type: tgz
-            url: https://packages.confluent.io/maven/io/confluent/kafka-connect-jdbc/10.7.4/kafka-connect-jdbc-10.7.4.tar.gz
