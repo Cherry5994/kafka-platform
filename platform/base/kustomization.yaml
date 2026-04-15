@@ -1,5 +1,2 @@
 resources:
   - kafka
-  - connect
-  - monitoring
-  - registry
